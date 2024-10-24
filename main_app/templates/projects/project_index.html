@@ -3,6 +3,10 @@
     
     <h1>Projects</h1>
     
-    <p>This is the project index.</p>
+    {% for project in projects %}
+    <ul>
+        <li>{{ project.title }}</li>
+    </ul>
+    {% endfor%}
 
 {% endblock %}
