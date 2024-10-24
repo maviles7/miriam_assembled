@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
     
-    <h1>About</h1>
-    
-    <p>This is the about page</p>
+
+{% for info in engineer %}
+    <h1>{{ info.name }}</h1>
+    <div>
+        <a href='{{ info.linkedin }}' target='_blank'><p>LinkedIn</p></a>
+        <a href='{{ info.github }}' target='_blank'><p>GitHub</p></a>
+        <a href='{{ info.resume }}' target='_blank'><p>Resume</p></a>
+    </div>
+    <p>{{ info.bio }}</p>
+    {% endfor %}
 
 {% endblock %}

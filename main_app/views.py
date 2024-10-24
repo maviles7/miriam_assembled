@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Projects
+from .models import Engineer
 
 # Create your views here.
 
@@ -7,7 +8,9 @@ def home(request):
     return render(request, 'home.html')
 
 def about(request):
-    return render(request, 'about.html')
+    engineer = Engineer.objects.all
+    return render(request, 'about.html', {'engineer': engineer })
 
 def projects_index(request):
-    return render(request, 'projects/project_index.html')  
+    projects = Projects.objects.all()
+    return render(request, 'projects/project_index.html', {'projects': projects}) 
