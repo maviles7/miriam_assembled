@@ -14,3 +14,7 @@ def about(request):
 def projects_index(request):
     projects = Projects.objects.all()
     return render(request, 'projects/project_index.html', {'projects': projects}) 
+
+def projects_detail(request, project_id):
+    project = Projects.objects.get(id=project_id)
+    return render(request, 'projects/project_detail.html', {'project': project})
