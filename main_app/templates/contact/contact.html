@@ -3,7 +3,14 @@
     <h1>Contact Miriam</h1>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+        <label for="id_name">Name:</label>
+        {{ form.name }}
+        <label for="id_email">Email:</label>
+        {{ form.email }}
+        <label for="id_subject">Subject:</label>
+        {{ form.subject }}
+        <label for="id_message">Message:</label>
+        {{ form.message }}
         <button type="submit">Send</button>
     </form>
 {% endblock %}

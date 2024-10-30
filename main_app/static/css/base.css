@@ -1,8 +1,13 @@
 nav {
-    padding-top: 7px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 nav ul {
@@ -11,21 +16,55 @@ nav ul {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  margin: 0; 
+  padding: 0; 
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 60px; 
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form label {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Make input and textarea elements full width */
+    padding: 10px; /* Add padding inside input and textarea elements */
+    border: 1px solid #ccc; /* Add a border around input and textarea elements */
+    border-radius: 3px; /* Round the corners of input and textarea elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+form button[type="submit"] {
+    grid-column: 2;
+    justify-self: start; 
+    padding: 3px; /* Add padding inside the button */
+    width: 100%; /* Make the button full width */
 }
