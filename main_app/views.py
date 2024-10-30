@@ -25,15 +25,20 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            # Extracting form data
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
+            # Extract form data
+            subject = f"Contact Us Form Submission: {form.cleaned_data['subject']}"
             from_email = form.cleaned_data['email']
+            message_body = f"""
+            New message from: {from_email}
 
+            Message:
+            {form.cleaned_data['message']}
+            """
+            
             # Sending the email
             send_mail(
                 subject,
-                message,
+                message_body,
                 from_email,
                 ['maviles221@gmail.com'],  # Replace with the recipient email
                 fail_silently=False,
