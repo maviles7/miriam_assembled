@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .models import Projects
@@ -22,16 +23,19 @@ def projects_detail(request, project_id):
     return render(request, 'projects/project_detail.html', {'project': project})
 
 def contact(request):
+    prof_email = os.environ.get('EMAIL')
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             # Extract form data
-            subject = f"Contact Us Form Submission: {form.cleaned_data['subject']}"
+            subject = f"Contact Miriam Form Submission: {form.cleaned_data['subject']}"
             from_email = form.cleaned_data['email']
             message_body = f"""
-            New message from: {from_email}
+            new portfolio message from: {from_email}
 
-            Message:
+            subject: {form.cleaned_data['subject']}
+
+            message:
             {form.cleaned_data['message']}
             """
             
@@ -40,7 +44,7 @@ def contact(request):
                 subject,
                 message_body,
                 from_email,
-                ['maviles221@gmail.com'],  # Replace with the recipient email
+                [f"{prof_email}"],  # Replace with the recipient email
                 fail_silently=False,
             )
 
