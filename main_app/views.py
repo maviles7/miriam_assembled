@@ -8,7 +8,8 @@ from .forms import ContactForm
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+    engineer = Engineer.objects.all()
+    return render(request, 'home.html', {'engineer': engineer})
 
 def about(request):
     engineer = Engineer.objects.all
