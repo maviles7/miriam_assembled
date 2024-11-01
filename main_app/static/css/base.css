@@ -124,6 +124,8 @@ form button[type="submit"] {
   gap: 10px;
 }
 
+/* --- about p;age --- */ 
+
 .home-about {
   display: flex;
   flex-direction: column;
@@ -161,9 +163,16 @@ form button[type="submit"] {
   margin: 0
 }
 
+/* --- project page & cards --- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
 .card {
-  margin: auto;
-  width: min(300px, 100%);
   background-color: #fefefe;
   border-radius: 1rem;
   padding: 0.5rem;
@@ -173,8 +182,7 @@ form button[type="submit"] {
 .card__hero {
   background-color: #fef4e2;
   border-radius: 0.5rem 0.5rem 0 0;
-  padding: 1.5rem;
-  font-size: 0.875rem;
+  height: 70%
 }
 
 .card__hero img {
@@ -208,6 +216,8 @@ form button[type="submit"] {
   color: #fff;
   font-size: 1rem;
 }
+
+/* --- Media Queries for Cards --- */
 
 @media (min-width: 340px) {
   .card__footer {

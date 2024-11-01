@@ -1,24 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
     
-    <h1>Projects</h1>
-    
+  <h1>Projects</h1>
+  <div class="project-grid">
     {% for project in projects %}
-    <a href="{% url 'project-detail' project.id %}"><ul class="card"></a>
-        <section class="card__hero">
-            <img src="{{ project.image }}" alt="project image">
-        </section>
-      
-        <footer class="card__footer">
-          <div class="card__job-summary">
-            <div class="card__job">
-              <p class="card__job-title">{{ project.title }}</p>
+      <ul class="card">
+          <section class="card__hero">
+              <img src="{{ project.image }}" alt="project image">
+          </section>
+        
+          <footer class="card__footer">
+            <div class="card__job-summary">
+              <div class="card__job">
+                <p class="card__job-title">{{ project.title }}</p>
+              </div>
             </div>
-          </div>
-          <button class="card__btn">view</button>
-        </footer>
- 
-    </ul>
+            <a href="{% url 'project-detail' project.id %}">
+              <button class="card__btn">view</button>
+            </a>
+          </footer>
+      </ul>
     {% endfor%}
-
+  </div>
 {% endblock %}
