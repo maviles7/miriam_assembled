@@ -4,8 +4,20 @@
     <h1>Projects</h1>
     
     {% for project in projects %}
-    <ul>
-        <a href="{% url 'project-detail' project.id %}"><li>{{ project.title }}</li></a>
+    <a href="{% url 'project-detail' project.id %}"><ul class="card"></a>
+        <section class="card__hero">
+            <img src="{{ project.image }}" alt="project image">
+        </section>
+      
+        <footer class="card__footer">
+          <div class="card__job-summary">
+            <div class="card__job">
+              <p class="card__job-title">{{ project.title }}</p>
+            </div>
+          </div>
+          <button class="card__btn">view</button>
+        </footer>
+ 
     </ul>
     {% endfor%}
 
