@@ -55,6 +55,11 @@ h1, h3{
   font-family: 'Staatliches';
 }
 
+h1 {
+  font-size: 350%;
+  margin-bottom: 0;
+}
+
 a:hover {
   text-shadow: 3px 3px 5px rgb(13, 68, 13);
 }
@@ -106,6 +111,9 @@ form button[type="submit"] {
   justify-content: center;
   align-items: center;
   align-content: center;
+  h3 {
+    font-family: 'Source Code Pro', monospace;
+  }
 }
 
 .sub-header {
@@ -129,6 +137,7 @@ form button[type="submit"] {
   align-items: center;
   align-content: center;
   gap: 10px;
+  margin: 3%;
 }
 
 #link {
@@ -237,6 +246,7 @@ form button[type="submit"] {
   row-gap: 1rem;
   font-weight: 700;
   font-size: 0.875rem;
+  margin-top: 1rem;
 }
 
 .card__job-title {
@@ -258,7 +268,7 @@ form button[type="submit"] {
   font-family: 'Source Code Pro', monospace;
 }
 
-/* --- Detail Page --- */
+/* --- detail page --- */
 
 .project-detail {
   display: flex;
@@ -267,7 +277,10 @@ form button[type="submit"] {
   align-items: center;
   align-content: center;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-left:60px;
+  padding: 20px;
 }
 
 .project-detail img {

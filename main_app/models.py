@@ -17,6 +17,7 @@ class Engineer(models.Model):
     github = models.URLField(max_length=500)
     resume = models.URLField(max_length=500)
     bio = models.TextField(max_length=500)
+    inspo = models.TextField(max_length=500)
 
     def __str__(self):
         return self.name
