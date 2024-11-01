@@ -171,18 +171,6 @@ form button[type="submit"] {
 
 /* --- about page --- */ 
 
-.home-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 60px;
-  margin-left:60px;
-}
-
 .about-page {
   display: flex;
   flex-direction: column;
@@ -193,6 +181,7 @@ form button[type="submit"] {
   margin-top: 20px;
   margin-right: 60px;
   margin-left:60px;
+  padding: 20px;
 }
 
 .skills {
@@ -212,8 +201,10 @@ form button[type="submit"] {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
   padding: 1rem;
 }
 
@@ -248,6 +239,10 @@ form button[type="submit"] {
   font-size: 0.875rem;
 }
 
+.card__job-title {
+  font-family: 'Staatliches';
+}
+
 .card__btn {
   width: 100%;
   font-weight: 400;
@@ -260,6 +255,7 @@ form button[type="submit"] {
   background-color: #141417;
   color: #fff;
   font-size: 1rem;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /* --- Detail Page --- */
