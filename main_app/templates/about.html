@@ -5,10 +5,10 @@
 {% for info in engineer %}
     <h1>{{ info.name }}</h1>
     <div class="about-page">
-        <div class="links">
-            <a href='{{ info.linkedin }}' target='_blank'><p>LinkedIn</p></a>
-            <a href='{{ info.github }}' target='_blank'><p>GitHub</p></a>
-            <a href='{{ info.resume }}' target='_blank'><p>Resume</p></a>
+        <div class=links>
+            <a href='{{ info.linkedin }}' target='_blank'><button id="link"><span>LinkedIn</span></button></a>
+            <a href='{{ info.github }}' target='_blank'><button id="link"><span>GitHub</span></button></a>
+            <a href='{{ info.resume }}' target='_blank'><button id="link"><span>Resume</span></button></a>
         </div>
         <p>{{ info.bio }}</p>
         <div class="skills">
@@ -32,11 +32,9 @@
         </div>
         <div class="background">
             <h3>Background</h3>
-            <p>Software Engineering Fellow, General Assembly</p>
+            <p>Software Engineering Bootcamp Graduate, General Assembly</p>
             <p>Doctor of Physical Therapy, MGH Institute of Health Professions</p>
             <p>B.S. of Kinesiology, Michigan State University</p>
-            <p>Bilungual: English & Spanish</p>
-            <p>Texas Native</p>
         </div>
     </div>
     {% endfor %}

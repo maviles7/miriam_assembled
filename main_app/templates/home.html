@@ -13,9 +13,9 @@
         </div>
     </div>
     <div class=links>
-        <a href='{{ info.linkedin }}' target='_blank'><p>LinkedIn</p></a>
-        <a href='{{ info.github }}' target='_blank'><p>GitHub</p></a>
-        <a href='{{ info.resume }}' target='_blank'><p>Resume</p></a>
+        <a href='{{ info.linkedin }}' target='_blank'><button id="link"><span>LinkedIn</span></button></a>
+        <a href='{{ info.github }}' target='_blank'><button id="link"><span>GitHub</span></button></a>
+        <a href='{{ info.resume }}' target='_blank'><button id="link"><span>Resume</span></button></a>
     </div>
     <h1><a href="{% url 'about' %}">About</a></h1>
     <h1><a href="{% url 'project-index' %}">Projects</a></h1>

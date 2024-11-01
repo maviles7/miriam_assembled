@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
     
+    <div class="project-detail">
     <h1>{{ project.title }}</h1>
 
     <img src="{{ project.image }}" alt="{{ project.title }}">
 
     <a href="{{ project.deploy_link }}" target='_blank'><p> Visit {{ project.title }}</p></a>
-    <a href="{{ project.github_link }}" target='_blank'>{{ project.title }}' GitHub</p></a>
+    <a href="{{ project.github_link }}" target='_blank'>{{ project.title }} GitHub</p></a>
 
     <h3>{{ project.description }}</h3>
 
     <h3>Technologies Used: {{ project.technologies }} </h3>
-
+    </div>
 
 {% endblock %}
