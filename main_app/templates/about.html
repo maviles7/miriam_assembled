@@ -4,12 +4,30 @@
 
 {% for info in engineer %}
     <h1>{{ info.name }}</h1>
-    <div class="links">
-        <a href='{{ info.linkedin }}' target='_blank'><p>LinkedIn</p></a>
-        <a href='{{ info.github }}' target='_blank'><p>GitHub</p></a>
-        <a href='{{ info.resume }}' target='_blank'><p>Resume</p></a>
+    <div class="about-page">
+        <div class="links">
+            <a href='{{ info.linkedin }}' target='_blank'><p>LinkedIn</p></a>
+            <a href='{{ info.github }}' target='_blank'><p>GitHub</p></a>
+            <a href='{{ info.resume }}' target='_blank'><p>Resume</p></a>
+        </div>
+        <h3>Who is Miriam, you might ask?</h3>
+        <p>{{ info.bio }}</p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>Neon</li>
+                <li>Communication<li>
+                <li>Time Management & Organization</li>
+                <li>Grit</li>
+            </ul>
+        </div>
     </div>
-    <p>{{ info.bio }}</p>
     {% endfor %}
 
 {% endblock %}
