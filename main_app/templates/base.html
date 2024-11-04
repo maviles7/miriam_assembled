@@ -2,39 +2,41 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <div class="clear-background">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="shortcut icon" type="image/png" href="{% static 'images/miriamavilesSE.png' %}" /> 
-        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-        <title>Miriam Aviles</title>
-        {% block head %} 
-        {% endblock %} 
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="{% static 'images/miriamavilesSE.png' %}"
+      />
+      <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+      <title>Miriam Aviles</title>
+      {% block head %} {% endblock %}
     </head>
     <body>
-        <header>
+      <header>
         <nav>
-            <ul class="navbar">
-                <li><a href="{% url 'home' %}">Miriam Aviles</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'project-index' %}">Projects</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
+          <ul class="navbar">
+            <li><a href="{% url 'home' %}">Miriam Aviles</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'project-index' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
         </nav>
-        </header>
-        <main>
-            {% block content %}
-            {% endblock %}
-        </main>
-        <footer class="page-footer">
-            <div class="footer-links">
-                <p>Engineered by Miriam Aviles</p>
-                <div>
-                    <a href='{{ info.linkedin }}' target='_blank'>LinkedIn</a>
-                    <a href='{{ info.github }}' target='_blank'>GitHub</a>
-                    <a href='{{ info.resume }}' target='_blank'>Resume</a>
-                </div>
-            </div>
-        </footer>
+      </header>
+      <main>{% block content %} {% endblock %}</main>
+      <footer class="page-footer">
+        <div class="footer-links">
+          <p>Engineered by Miriam Aviles</p>
+          <div>
+            <a href="https://www.linkedin.com/in/miriam-aviles-491312236/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/maviles7" target="_blank">GitHub</a>
+            <a href="https://drive.google.com/file/d/1z_CvJVPPF38TwlFYDs9RxcYugBclbiIE/view?usp=sharing" target="_blank">Resume</a>
+          </div>
+        </div>
+      </footer>
     </body>
+  </div>
 </html>

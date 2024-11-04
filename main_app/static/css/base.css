@@ -18,6 +18,13 @@ body {
   font-family: 'Sourse Code Pro', monospace;
 }
 
+.clear-background {
+  background-color: #053c2752;
+  height: 100%;
+  width: 100%;
+}
+
+
 .page-footer {
   background-color: #0b745c68;
   padding: 0;
@@ -30,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  z-index: 1000;
 }
 
 .footer-links {

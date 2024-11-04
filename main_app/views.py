@@ -12,7 +12,7 @@ def home(request):
     return render(request, 'home.html', {'engineer': engineer})
 
 def about(request):
-    engineer = Engineer.objects.all
+    engineer = Engineer.objects.all()
     return render(request, 'about.html', {'engineer': engineer })
 
 def projects_index(request):
