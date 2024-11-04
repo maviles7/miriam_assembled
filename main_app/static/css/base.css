@@ -5,6 +5,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -12,10 +14,31 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
   color: white;
   font-family: 'Sourse Code Pro', monospace;
+}
+
+.page-footer {
+  background-color: #0b745c68;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
 }
 
 nav {
