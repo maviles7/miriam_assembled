@@ -100,7 +100,7 @@ form textarea {
 
 form button[type="submit"] {
     grid-column: 2;
-    justify-self: start; 
+    justify-self: center; 
     padding: 3px; /* Add padding inside the button */
     width: 100%; /* Make the button full width */
 }
