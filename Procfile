@@ -1,0 +1,1 @@
+web: gunicorn miriam_assembled.wsgi

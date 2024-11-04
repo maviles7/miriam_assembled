@@ -147,3 +147,6 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 # print(f"EMAIL_HOST_USER: {os.environ['EMAIL_HOST_USER']}")
 # print(f"EMAIL_HOST_PASSWORD: {os.environ['EMAIL_HOST_PASSWORD']}")
+
+import django_on_heroku
+django_on_heroku.settings(locals())
