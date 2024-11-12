@@ -45,7 +45,7 @@ nav {
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -72,6 +72,10 @@ a {
   font-family: 'Staatliches';
 }
 
+.foottag {
+  color: whitesmoke;
+}
+
 h1, h3{
   font-family: 'Staatliches';
 }
@@ -91,7 +95,7 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 60px; 
+  margin-top: 20px; 
 
 }
 
