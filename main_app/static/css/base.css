@@ -10,27 +10,18 @@ html, body {
 }
 
 body {
-  background-image: url('/static/images/background.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
+  background-color: rgb(245, 245, 245);
+  color: #2f4e3c;
   font-family: 'Sourse Code Pro', monospace;
 }
 
-.clear-background {
-  background-color: #053c2752;
-  height: 100%;
-  width: 100%;
-}
-
-
 .page-footer {
   background-color: #0b745c68;
+  margin-top: 30px;
   padding: 0;
   text-align: center;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-direction: row;
@@ -57,7 +48,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #2f4e3068;
   z-index: 1000;
   font-family: 'Staatliches';
 }
@@ -78,7 +68,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #2f4e30;
   font-family: 'Staatliches';
 }
 
@@ -92,7 +82,7 @@ h1 {
 }
 
 a:hover {
-  text-shadow: 3px 3px 5px rgb(13, 68, 13);
+  text-shadow: 3px 3px 5px rgb(71, 163, 71);
 }
 
 main {
@@ -221,6 +211,7 @@ form button[type="submit"] {
   margin-top: 20px;
   margin-right: 60px;
   margin-left:60px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -249,10 +240,10 @@ form button[type="submit"] {
 }
 
 .card {
-  background-color: #fefefe;
+  background-color: white;
   border-radius: 1rem;
   padding: 0.5rem;
-  color: #141417;
+  color: #2f4e30;
 }
 
 .card__hero {
@@ -293,8 +284,8 @@ form button[type="submit"] {
   text-align: center;
   padding: 0.5rem 1.25rem;
   border-radius: 1rem;
-  background-color: #141417;
-  color: #fff;
+  background-color: #2f4e30;
+  color: white;
   font-size: 1rem;
   font-family: 'Source Code Pro', monospace;
 }
