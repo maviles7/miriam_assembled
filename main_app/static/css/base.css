@@ -13,6 +13,7 @@ body {
   background-color: rgb(245, 245, 245);
   color: #2f4e3c;
   font-family: 'Sourse Code Pro', monospace;
+  height: 100%;
 }
 
 .page-footer {
@@ -96,7 +97,6 @@ main {
   align-items: center;
   align-content: center;
   margin-top: 20px; 
-
 }
 
 form {
@@ -333,4 +333,9 @@ form button[type="submit"] {
   }
 }
 
+@media (max-width: 340px) {
+  main {
+    height: 100%;
+  }
+}
 
